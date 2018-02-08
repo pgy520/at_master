@@ -1,0 +1,225 @@
+/*第一个tab头部*/
+
+.at_add {
+    height: 100%;
+}
+
+
+/*关闭按钮*/
+
+#at_add_close {
+    cursor: pointer;
+}
+
+
+/*content*/
+
+.at_addcontent {
+    height: calc(100% - 45px);
+}
+
+
+/*tab*/
+
+.at_add_tab {
+    padding: 5px 5px 5px 11px;
+    color: rgb(235, 235, 235);
+    height: 38px;
+    background: rgb(77, 77, 77);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.at_tab_action {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border: 1px solid rgb(33, 33, 33);
+}
+
+.at_tab_action.active {
+    background: rgb(43, 43, 43);
+    border: 1px solid rgb(43, 43, 43);
+}
+
+
+/*tab-content*/
+
+.at_add_tabcontent {
+    height: calc(100% - 45px - 38px);
+    padding-left: 6px;
+    overflow: hidden;
+}
+
+.at_add_tabcontent .tabcontent {
+    height: 100%;
+    background:rgb(64,64,64);
+    overflow: auto;
+    display: none;
+}
+
+.at_add_tabcontent .tabcontent.active {
+    display: block;
+}
+
+
+/*tab-模块*/
+
+.at_operates_content {
+    /*height: 92px;*/
+    flex-wrap:wrap;
+background: rgb(64, 64, 64);
+}
+.empty{
+width:calc(100%/3);
+border-right: 1px solid rgb(33, 33, 33);
+border-bottom: 1px solid rgb(33, 33, 33);
+}
+
+.at_mod {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width:calc(100%/3);
+    height:92px;
+    box-sizing:border-box;
+    background: rgb(64, 64, 64);
+    border-right: 1px solid rgb(33, 33, 33);
+    border-bottom: 1px solid rgb(33, 33, 33);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+}
+
+.at_mod>img{
+  width:70%;
+}
+
+.at_mod .quesion {
+    color: #c0c0c0;
+    display: none;
+    font-size: 12px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 14px;
+    height: 14px;
+    background: rgb(37, 37, 37);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 2;
+    right: 3px;
+    top: 3px;
+}
+
+.at_mod>div{
+   margin-top:10px;
+   line-height:16px;
+   text-align:center;
+}
+
+.at_mod:hover {
+    background: rgb(77, 77, 77);
+}
+
+.at_mod:hover .quesion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.at_mod:hover .quesion:hover {
+    background: rgb(64, 64, 64);
+    color: #fff;
+}
+
+/*tab 切换*/
+.at_tab_action:hover{
+    background:rgb(107,107,107);
+}
+.at_tab_action.active:hover{
+background:rgb(43,43,43);
+}
+
+
+/*模块克隆生成元素*/
+#at_mod_clone{
+  width:82px;
+  height:92px;
+ position:absolute;
+ z-index:6;
+  background:red;
+display:none;
+left:400px;
+top:200px;
+}
+#at_mod_clone .at_mod {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+width:100%;
+height:92px;
+box-sizing:border-box;
+background: rgb(64, 64, 64);
+border-right: 1px solid rgb(33, 33, 33);
+border-bottom: 1px solid rgb(33, 33, 33);
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+cursor: pointer;
+}
+#at_mod_clone  .at_mod:hover .quesion {
+  display:none;
+}
+
+
+/*tab-second*/
+.createsymbol,.navigation{
+outline: 0px;
+cursor: default;
+user-select: none;
+display: flex;
+align-items: center;
+height: 50px;
+padding: 10px;
+box-sizing: border-box;
+background-color: rgb(64, 64, 64);
+border-top:1px solid #000;
+border-bottom:1px solid #000;
+flex-shrink: 0;
+}
+.createsymbol:hover,.navigation:hover{
+background-color: rgb(94, 94, 94);
+}
+.navigation{
+border-top:none;
+}
+.createsymbol img,
+.navigation img{
+  margin-right:10px;
+  width:26px;
+}
+
+.brnone {
+    border-right: none;
+}
+
